@@ -18,19 +18,18 @@ public class Main {
                 System.out.println("You have placed an invalid mark, so u lose a turn");
             }
 
-
-
             if(logic.checkWin()){
                 logic.printBoard();
                 System.out.println("Congratulations, " + logic.getCurrentPlayer() + " wins the game");
+            }else{
+                if(logic.isDraw()){
+                    logic.printBoard();
+                    System.out.println("Game is draw");
+                }
             }
 
             logic.switchTurn();
 
-            if(logic.isDraw()){
-                logic.printBoard();
-                System.out.println("Game is draw");
-            }
 
         }
 

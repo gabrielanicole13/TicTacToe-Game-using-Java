@@ -2,7 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
+
+            new GameBoard();
+        /*
+         Scanner input = new Scanner(System.in);
         GameLogic logic = new GameLogic();
 
         while (logic.checkWin() != true && logic.isDraw() != true) {
@@ -29,10 +32,8 @@ public class Main {
             }
 
             logic.switchTurn();
-
-
-        }
-
+            }
+         */
     }
 
 }
